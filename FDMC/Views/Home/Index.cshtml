@@ -1,1 +1,12 @@
-﻿<h1>Fluffy Duffy Munchin Cat</h1>
+﻿@model FDMC.ViewModel.CatViewModel
+
+<h1>Fluffy Duffy Munchkin Cat</h1>
+<ul>
+    @foreach (var cat in Model.Cats)
+    {
+        <li><a asp-controller="Cats" asp-action="Details" asp-route-id="@cat.Id">@cat.Name</a></li>
+
+    }
+</ul>
+
+<a asp-controller="Cats" asp-action="Add">Add Cat</a>
