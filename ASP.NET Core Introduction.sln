@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chushka.WebApp", "Chushka.W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chushka.Data", "Chushka.Data\Chushka.Data.csproj", "{CCAFEAFC-5751-42DF-AECF-74DBA7EC6BA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chushka.Models", "Chushka.Models\Chushka.Models.csproj", "{E5EE911F-B00E-4BEE-89EA-E344A0F79F6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{CCAFEAFC-5751-42DF-AECF-74DBA7EC6BA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCAFEAFC-5751-42DF-AECF-74DBA7EC6BA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCAFEAFC-5751-42DF-AECF-74DBA7EC6BA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5EE911F-B00E-4BEE-89EA-E344A0F79F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5EE911F-B00E-4BEE-89EA-E344A0F79F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5EE911F-B00E-4BEE-89EA-E344A0F79F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5EE911F-B00E-4BEE-89EA-E344A0F79F6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
