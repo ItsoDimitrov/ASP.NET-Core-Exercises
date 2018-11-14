@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace CHUSHKA.WebApp.Data
+namespace Chushka.WebApp.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <UserSecretsId>aspnet-CHUSHKA.WebApp-40ECE514-A2D2-4554-9AF3-DDDA18DAD9C8</UserSecretsId>
+    <UserSecretsId>aspnet-Chushka.WebApp-C0746B2F-CF1C-48F9-BE84-CC2153824B0B</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

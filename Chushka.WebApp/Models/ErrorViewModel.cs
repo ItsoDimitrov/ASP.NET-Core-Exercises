@@ -1,6 +1,6 @@
 using System;
 
-namespace CHUSHKA.WebApp.Models
+namespace Chushka.WebApp.Models
 {
     public class ErrorViewModel
     {

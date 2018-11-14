@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using CHUSHKA.WebApp.Models;
+using Chushka.WebApp.Models;
 
-namespace CHUSHKA.WebApp.Controllers
+namespace Chushka.WebApp.Controllers
 {
     public class HomeController : Controller
     {
