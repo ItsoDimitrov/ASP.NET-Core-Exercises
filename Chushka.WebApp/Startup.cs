@@ -12,6 +12,8 @@ using Microsoft.EntityFrameworkCore;
 using Chushka.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Chushka.Models;
+using Chushka.WebApp.Utilities;
 
 namespace Chushka.WebApp
 {
@@ -37,14 +39,31 @@ namespace Chushka.WebApp
             services.AddDbContext<ChushkaDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>()
+            services.AddIdentity<ChushkaUser, IdentityRole>(opt =>
+            {
+                opt.SignIn.RequireConfirmedEmail = false;
+                opt.Password.RequireLowercase = false;
+                opt.Password.RequireUppercase = false;
+                opt.Password.RequireNonAlphanumeric = false;
+                opt.Password.RequiredUniqueChars = 0;
+                opt.Password.RequiredLength = 3;
+            })
+                .AddDefaultTokenProviders()
                 .AddEntityFrameworkStores<ChushkaDbContext>();
 
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = $"/Account/Login";
+                options.LogoutPath = $"/Account/Logout";
+                options.AccessDeniedPath = $"/Account/AccessDenied";
+            });
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {
@@ -56,6 +75,7 @@ namespace Chushka.WebApp
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
+            Seeder.Seed(serviceProvider);
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
