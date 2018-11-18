@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FDMC", "FDMC\FDMC.csproj", "{7A749A40-45F8-4028-8BD5-EDCBC86B2731}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chushka.WebApp", "Chushka.WebApp\Chushka.WebApp.csproj", "{6B1EAEA8-D147-4F90-B0AA-3C3F88BACE6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chushka.WebApp", "Chushka.WebApp\Chushka.WebApp.csproj", "{6B1EAEA8-D147-4F90-B0AA-3C3F88BACE6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chushka.Data", "Chushka.Data\Chushka.Data.csproj", "{CCAFEAFC-5751-42DF-AECF-74DBA7EC6BA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chushka.Data", "Chushka.Data\Chushka.Data.csproj", "{CCAFEAFC-5751-42DF-AECF-74DBA7EC6BA0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chushka.Models", "Chushka.Models\Chushka.Models.csproj", "{E5EE911F-B00E-4BEE-89EA-E344A0F79F6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chushka.Models", "Chushka.Models\Chushka.Models.csproj", "{E5EE911F-B00E-4BEE-89EA-E344A0F79F6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7A749A40-45F8-4028-8BD5-EDCBC86B2731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7A749A40-45F8-4028-8BD5-EDCBC86B2731}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7A749A40-45F8-4028-8BD5-EDCBC86B2731}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7A749A40-45F8-4028-8BD5-EDCBC86B2731}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6B1EAEA8-D147-4F90-B0AA-3C3F88BACE6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6B1EAEA8-D147-4F90-B0AA-3C3F88BACE6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B1EAEA8-D147-4F90-B0AA-3C3F88BACE6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
